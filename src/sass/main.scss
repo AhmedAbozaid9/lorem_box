@@ -1,0 +1,14 @@
+
+@use "./pages/LandingPage";
+@use "./helper/variables" as *;
+@use "./helper/mixins" as *;
+
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+  margin: 0;
+  font-family: $primary_font;
+  @include breakPoints("small"){
+   font-size: 0.8rem;
+  }
+}

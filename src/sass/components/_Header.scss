@@ -1,0 +1,54 @@
+@use "../helper/variables" as *;
+@use "../helper/mixins" as *;
+
+
+header {
+  background-color: $primary_color;
+  color: #fff;
+  position: relative;
+  
+  &::before {
+    content: "";
+    width: 0;
+    height: 0;
+    border-top: 15rem solid $primary_color;
+    border-right: 100vw solid transparent;
+    position: absolute;
+    top: 100%;
+    left: 0%;
+  }
+  img {
+    position: absolute;
+    bottom: -300px;
+    right: 2rem;
+    @include breakPoints("small"){
+      width: 300px;
+      right: 0.8rem;
+    }
+    
+    @include breakPoints("medium"){
+      width: 350px;
+    }
+
+    @include breakPoints("laptop"){
+      width: 400px;
+    }
+  }
+  h1 {
+    
+    font-size: 4.5rem;
+    margin: 2rem;
+    @include breakPoints("small") {
+      font-size: 3rem;
+    }
+    .logo {
+      color: $fourth_color;
+    }
+  }
+  
+  p {
+    margin: 2rem;
+    font-size: 1.4rem;
+    opacity: 0.8;
+  }
+}

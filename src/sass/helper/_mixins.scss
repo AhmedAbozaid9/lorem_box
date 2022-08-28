@@ -1,0 +1,28 @@
+@mixin center {
+  display:flex;
+  align-items: center;
+  justify-content: center;
+}
+@mixin breakPoints ($point) {
+  @if $point == "small"{
+    @media (max-width:991px) {
+      @content
+    }
+  }
+  
+  @if $point == "medium"{
+    @media (min-width:992px)and(max-width:1199px) {
+      @content
+    }
+  }
+  @if $point == "laptop"{
+    @media (min-width:1200px) and (max-width:1599px) {
+      @content
+    }
+  }
+  @if $point == "desktop"{
+    @media (min-width:1600px) {
+      @content
+    }
+  }
+}
