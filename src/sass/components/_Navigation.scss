@@ -8,13 +8,20 @@
   padding: 1rem 0;
   li {
     margin: 0 1rem;
+    @include breakPoints("small") {
+      margin: 0 0.5rem;
+    }
   }
+  
   a,
   a:link,
   a:visited {
     text-decoration: none;
     color: #fff;
     font-size: 20px;
+    @include breakPoints("small") {
+      font-size: 16px;
+    }
     &:hover {
       border-bottom: 2px solid $fourth_color;
     }
