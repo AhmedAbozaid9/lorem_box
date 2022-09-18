@@ -1,0 +1,25 @@
+@use "../helper/variables" as *;
+@use "../helper/mixins" as *;
+
+.loremInfo {
+  text-align: center;
+  margin: 350px 1rem 150px 1rem;
+  padding: 0 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  @include breakPoints("small") {
+    padding: 0 0.5rem;
+  }
+  p {
+    max-width: 900px;
+    letter-spacing: 1px;
+    line-height: 2rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+    font-size: 24px;
+    color: rgba(black, 0.7);
+    @include breakPoints("small") {
+      font-size: 20px;
+    }
+  }
+  
+}

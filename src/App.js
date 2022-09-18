@@ -1,13 +1,22 @@
-import React from 'react'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import LandingPage from './pages/LandingPage'
+import Navigation from "./components/Navigation";
+import LandingPage from "./pages/LandingPage";
+import GeneratePage from "./pages/GeneratePage";
+import Footer from "./components/Footer";
 
 function App() {
   return (
     <>
-      <LandingPage/>
+      <Navigation />
+      <Routes>
+        <Route path="/" element={<LandingPage />} />
+        <Route path="generate" element={<GeneratePage />} />
+      </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

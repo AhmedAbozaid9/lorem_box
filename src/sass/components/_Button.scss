@@ -1,0 +1,20 @@
+@use "../helper/variables" as *;
+@use  "../helper/mixins" as *;
+
+.btn {
+    background-color: $primary_color;
+    font-size: 20px;
+    border: none;
+    padding: 1rem 2rem;
+    margin: 3rem 1rem;
+    color: #fff;
+    border-radius: 10px;
+    cursor: pointer;
+    @include breakPoints("small") {
+      font-size: 20px;
+      max-width: 400px;
+    }
+    &:active  {
+      transform: scale(0.98);
+    }
+  }

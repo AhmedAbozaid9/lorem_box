@@ -8,7 +8,7 @@ header::before {
   content: "";
   width: 0;
   height: 0;
-  border-top: 15rem solid #9C9EFE;
+  border-top: 12rem solid #9C9EFE;
   border-right: 100vw solid transparent;
   position: absolute;
   top: 100%;
@@ -37,12 +37,16 @@ header img {
 }
 header h1 {
   font-size: 4.5rem;
-  margin: 2rem;
+  margin-top: 2rem;
+  margin-left: 2rem;
+  margin-bottom: 0;
+  padding-top: 4rem;
 }
 @media (max-width: 991px) {
   header h1 {
     font-size: 3rem;
-    margin: 1rem;
+    margin-top: 1rem;
+    margin-bottom: 0;
   }
 }
 header h1 .logo {
@@ -55,17 +59,20 @@ header p {
 }
 
 .navigation {
+  position: fixed;
+  top: 0%;
+  background-color: #9C9EFE;
+  z-index: 10;
+  width: 100vw;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
   display: flex;
   list-style: none;
-  margin: 0 1rem;
-  padding: 1rem 0;
-}
-.navigation li {
-  margin: 0 1rem;
+  margin: 0%;
+  padding: 1rem 1rem;
 }
 @media (max-width: 991px) {
-  .navigation li {
-    margin: 0 0.5rem;
+  .navigation {
+    padding: 1rem 0.5rem;
   }
 }
 .navigation a,
@@ -74,30 +81,103 @@ header p {
   text-decoration: none;
   color: #fff;
   font-size: 20px;
-}
-@media (max-width: 991px) {
-  .navigation a,
-.navigation a:link,
-.navigation a:visited {
-    font-size: 16px;
-  }
+  font-weight: bolder;
+  letter-spacing: 1px;
+  margin: 0 1rem;
 }
 .navigation a:hover,
 .navigation a:link:hover,
 .navigation a:visited:hover {
-  border-bottom: 2px solid #fefc9c;
+  text-decoration: underline;
 }
-.navigation :last-child a {
+.navigation a.active {
   color: #fefc9c;
-  font-weight: bolder;
+  font-weight: bold;
+}
+
+.loremInfo {
+  text-align: center;
+  margin: 350px 1rem 150px 1rem;
+  padding: 0 1rem;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+}
+@media (max-width: 991px) {
+  .loremInfo {
+    padding: 0 0.5rem;
+  }
+}
+.loremInfo p {
+  max-width: 900px;
+  letter-spacing: 1px;
+  line-height: 2rem;
+  margin: 0 auto;
+  padding: 0 1rem;
+  font-size: 24px;
+  color: rgba(0, 0, 0, 0.7);
+}
+@media (max-width: 991px) {
+  .loremInfo p {
+    font-size: 20px;
+  }
+}
+
+footer {
+  background-color: #9C9EFE;
+  color: #fff;
+  padding: 2rem;
+}
+@media (max-width: 991px) {
+  footer {
+    padding: 1rem;
+  }
+}
+footer h3, footer p {
+  margin: 0;
+  margin-bottom: 1rem;
+}
+
+section h2 {
+  font-size: 3rem;
+  color: #9C9EFE;
+  margin: 0;
+  padding: 3rem 0;
+}
+@media (max-width: 991px) {
+  section h2 {
+    font-size: 2.5rem;
+  }
+}
+
+.btn {
+  background-color: #9C9EFE;
+  font-size: 20px;
+  border: none;
+  padding: 1rem 2rem;
+  margin: 3rem 1rem;
+  color: #fff;
+  border-radius: 10px;
+  cursor: pointer;
+}
+@media (max-width: 991px) {
+  .btn {
+    font-size: 20px;
+    max-width: 400px;
+  }
+}
+.btn:active {
+  transform: scale(0.98);
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
   margin: 0;
   font-family: Lato;
-}
-@media (max-width: 991px) {
-  body {
-    font-size: 0.8rem;
-  }
+  overflow-x: hidden;
 }/*# sourceMappingURL=main.css.map */

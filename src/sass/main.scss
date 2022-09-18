@@ -1,14 +1,18 @@
-
 @use "./pages/LandingPage";
+@use "./components/Button";
 @use "./helper/variables" as *;
 @use "./helper/mixins" as *;
 
 @import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
 
+html {
+  scroll-behavior: smooth;
+}
+*{
+  box-sizing: border-box;
+}
 body {
   margin: 0;
   font-family: $primary_font;
-  @include breakPoints("small"){
-   font-size: 0.8rem;
-  }
+  overflow-x: hidden;
 }

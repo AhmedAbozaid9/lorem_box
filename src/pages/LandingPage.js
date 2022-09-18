@@ -1,13 +1,14 @@
-import React from 'react'
+import React from "react";
 
-import Header from "../components/Header"
-
+import Header from "../components/Header";
+import LoremInfo from "../components/LoremInfo";
 function LandingPage() {
   return (
     <>
       <Header />
+      <LoremInfo />
     </>
-  )
+  );
 }
 
-export default LandingPage
+export default LandingPage;
