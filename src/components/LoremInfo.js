@@ -15,7 +15,7 @@ const LoremInfo = () => {
         webpage or publication, without the meaning of the text influencing the
         design.
       </p>
-      <Button text="Generate lorem"/>
+      <Button text="Generate lorem" action/>
     </section>
   );
 };

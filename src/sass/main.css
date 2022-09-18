@@ -59,9 +59,9 @@ header p {
 }
 
 .navigation {
+  background-color: #9C9EFE;
   position: fixed;
   top: 0%;
-  background-color: #9C9EFE;
   z-index: 10;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -90,9 +90,10 @@ header p {
 .navigation a:visited:hover {
   text-decoration: underline;
 }
-.navigation a.active {
+.navigation a.try,
+.navigation a:link.try,
+.navigation a:visited.try {
   color: #fefc9c;
-  font-weight: bold;
 }
 
 .loremInfo {

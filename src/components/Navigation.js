@@ -5,7 +5,7 @@ function Navigation() {
   return (
     <nav className="navigation">
       <NavLink to="/">Home</NavLink>
-      <NavLink to="/generate">Try it now</NavLink>
+      <NavLink to="/generate" className="try">Try it now</NavLink>
     </nav>
   );
 }

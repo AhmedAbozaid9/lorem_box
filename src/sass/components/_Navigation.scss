@@ -2,9 +2,9 @@
 @use "../helper/variables" as *;
 
 .navigation {
+  background-color: $primary_color;
   position: fixed;
   top: 0%;
-  background-color: $primary_color;
   z-index: 10;
   width: 100vw;
   box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
@@ -15,7 +15,7 @@
   @include breakPoints("small") {
     padding: 1rem 0.5rem;
   }
-
+  
   a,
   a:link,
   a:visited {
@@ -29,9 +29,8 @@
     &:hover {
       text-decoration: underline;
     }
-  }
-  a.active {
-    color: $fourth_color;
-    font-weight: bold;
+    &.try {
+      color: $fourth_color;
+    }
   }
 }
