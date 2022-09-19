@@ -1,11 +1,11 @@
-import { React, useState } from "react";
+import { React, useState, useEffect } from "react";
 import Select from "react-select";
 
 import Button from "./Button";
 
-function Settings() {
-  const [type, setType] = useState("paragraphs");
-  const [count, setCount] = useState((val) => (val > 10000 ? 10000 : val));
+function Settings({ getOutput }) {
+  const [type, setType] = useState("");
+  const [count, setCount] = useState("");
 
   const options = [
     { value: "paragraphs", label: "Paragraphs" },
@@ -16,6 +16,16 @@ function Settings() {
     const val = e.target.value;
     setCount(val);
   };
+
+  useEffect(() => {
+    if (count > 10000) {
+      setCount(10000);
+    }
+    if(Math.sign(count) < 0) {
+      setCount(count * -1)
+    }
+  }, [count]);
+
   return (
     <form className="settings">
       <input
@@ -29,9 +39,15 @@ function Settings() {
       <Select
         options={options}
         placeholder="Select type"
-        onChange={(type) => setType(type)}
+        onChange={(type) => setType(type.value)}
       />
-      <Button text="Generate"/>
+      <Button
+        text="Generate"
+        action={(e) => {
+          e.preventDefault();
+          getOutput(type, count);
+        }}
+      />
     </form>
   );
 }

@@ -1,5 +1,6 @@
 import {LoremIpsum} from "lorem-ipsum"
-const getLorem = ({type,count}) => {
+const getLorem = (type,count) => {
+  count = parseInt(count)
   const lorem = new LoremIpsum({
     sentencesPerParagraph: {
       max: 8,

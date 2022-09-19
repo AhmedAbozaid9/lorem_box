@@ -1,16 +1,22 @@
 @use "../helper/variables" as *;
+@use "../helper/mixins" as *;
 
 form.settings {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   margin: 0 auto;
-  width: 95%;
+  width: 98%;
   & > * {
     height: 38px;
+    margin: {
+      right: 1rem;
+      bottom: 1rem;
+      top: 1rem;
+    }
   }
   input {
-    margin-right: 1rem;
-    width: 100px;
+    width: 115px;
     font-size: 20px;
     text-align: center;
     border: none;
@@ -24,10 +30,15 @@ form.settings {
     font-weight: bold;
     margin: 0%;
     margin-left: auto;
+    @include breakPoints("small") {
+      margin-left: 0%;
+    }
     padding: 0.5rem 1rem;
     font-size: 16px;
     letter-spacing: 2px;
     border-radius: 4px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   }
 }
 input::-webkit-outer-spin-button,
@@ -37,6 +48,6 @@ input::-webkit-inner-spin-button {
 }
 
 /* Firefox */
-input[type=number] {
+input[type="number"] {
   -moz-appearance: textfield;
 }
