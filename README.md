@@ -7,4 +7,4 @@ this is a small plattform to generate lorem text based on user's needs
 3. **SASS**
 4. Open source libraries
 <br>
-> This is my first project using SASS and routing, so it's not perfect even though i learned alot
+This is my first project using SASS and routing, so it's not perfect even though i learned alot.
