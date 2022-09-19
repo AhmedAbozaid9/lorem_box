@@ -1,0 +1,42 @@
+@use "../helper/variables" as *;
+
+form.settings {
+  display: flex;
+  align-items: center;
+  margin: 0 auto;
+  width: 95%;
+  & > * {
+    height: 38px;
+  }
+  input {
+    margin-right: 1rem;
+    width: 100px;
+    font-size: 20px;
+    text-align: center;
+    border: none;
+    border-radius: 3px;
+    &:focus {
+      outline: none;
+    }
+  }
+  .btn {
+    color: $fourth_color;
+    font-weight: bold;
+    margin: 0%;
+    margin-left: auto;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    letter-spacing: 2px;
+    border-radius: 4px;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}

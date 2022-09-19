@@ -1,8 +1,9 @@
 import React from "react";
-
+import { useNavigate } from "react-router-dom";
 import Button from "./Button";
 
 const LoremInfo = () => {
+  const navigate = useNavigate()
   return (
     <section className="loremInfo" id="LoremInfo">
       <h2>What is lorem ?</h2>
@@ -15,7 +16,7 @@ const LoremInfo = () => {
         webpage or publication, without the meaning of the text influencing the
         design.
       </p>
-      <Button text="Generate lorem" action/>
+      <Button text="Generate lorem" action = {() => navigate("/generate")}/>
     </section>
   );
 };

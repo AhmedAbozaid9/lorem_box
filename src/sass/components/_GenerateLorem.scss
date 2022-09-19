@@ -1,0 +1,44 @@
+@use "../helper/mixins" as *;
+@use "../helper/variables" as *;
+
+.loremContainer {
+  margin: {
+    top: 8rem;
+    bottom: 5rem;
+    right: auto;
+    left: auto;
+  }
+  padding: 1rem;
+  background-color: $third_color;
+  max-width: 1000px;
+  border-radius: 15px;
+
+  @include breakPoints("small") {
+    padding: 0.5rem;
+    margin: {
+    top: 8rem;
+    bottom: 5rem;
+    right: 0.5rem;
+    left: 0.5rem;
+  }
+  }
+
+}
+
+h2.lorem-header {
+  color: $fourth_color;
+  padding: 2rem;
+  text-align: center;
+  letter-spacing: 5px;
+  @include breakPoints("small") {
+    padding: 0.5rem;
+  }
+}
+
+.output {
+  width: 95%;
+  height: 400px;
+  background-color: #fff;
+  border-radius: 15px;
+  margin: 1rem auto;
+}
