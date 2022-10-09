@@ -6,7 +6,8 @@ header {
   background-color: $primary_color;
   color: #fff;
   position: relative;
-  
+
+
   &::before {
     content: "";
     width: 0;
