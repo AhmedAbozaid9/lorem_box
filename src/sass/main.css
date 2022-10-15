@@ -12,7 +12,7 @@ header::before {
   border-right: 100vw solid transparent;
   position: absolute;
   top: 100%;
-  left: 0;
+  left: 0%;
 }
 header img {
   position: absolute;

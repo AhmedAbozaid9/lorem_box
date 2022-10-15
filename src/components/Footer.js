@@ -7,7 +7,7 @@ function Footer() {
         <h3>About the website</h3>
         <p>
           hello there, <br />
-          This is a React website that is built to demonstrate some skill
+          This website is built using React.js
         </p>
       </section>
       <section>
