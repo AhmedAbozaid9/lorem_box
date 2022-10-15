@@ -7,8 +7,7 @@ function Footer() {
         <h3>About the website</h3>
         <p>
           hello there, <br />
-          this website is developed by a solo react developer and used external
-          open source libraries to generate the lorem text.
+          This is a React website that is built to demonstrate some skill
         </p>
       </section>
       <section>
