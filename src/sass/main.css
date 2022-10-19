@@ -202,9 +202,9 @@ h2.lorem-header {
 
 button.copy {
   background-color: #fff;
-  color: #A66CFF;
+  color: #9C9EFE;
   margin: 0.5rem 0;
-  border: 2px solid #A66CFF;
+  border: 2px solid #9C9EFE;
   border-radius: 4px;
   box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
   font-size: inherit;
@@ -212,6 +212,29 @@ button.copy {
   letter-spacing: 2px;
   cursor: pointer;
   padding: 0.5rem 1rem;
+}
+
+.circle {
+  z-index: -10;
+  width: 250px;
+  height: 250px;
+  border-radius: 50%;
+  background-color: #9C9EFE;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+@media (max-width: 991px) {
+  .circle {
+    width: 170px;
+    height: 170px;
+  }
+}
+
+.circle2 {
+  background-color: #A66CFF;
+  transform: translate(40%, -40%);
 }
 
 form.settings {

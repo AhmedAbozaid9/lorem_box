@@ -1,0 +1,23 @@
+@use "../helper/variables" as *;
+@use "../helper/mixins" as *;
+
+
+.circle {
+  z-index: -10;
+  width: 250px;
+  height: 250px;
+  @include breakPoints("small") {
+    width: 170px;
+    height: 170px;
+  }
+  border-radius: 50%;
+  background-color: $primary_color;
+  opacity: 0.3;
+  position: absolute;
+  top: 0;
+  left: -40px;
+}
+.circle2 {
+  background-color: $secondary_color;
+  transform: translate(40%,-40%);
+}
