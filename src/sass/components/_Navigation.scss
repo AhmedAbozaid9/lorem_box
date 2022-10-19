@@ -7,7 +7,7 @@
   top: 0%;
   z-index: 10;
   width: 100vw;
-  box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0 1px 4px;
   display: flex;
   list-style: none;
   margin: 0%;
@@ -15,7 +15,7 @@
   @include breakPoints("small") {
     padding: 1rem 0.5rem;
   }
-  
+
   a,
   a:link,
   a:visited {
@@ -29,7 +29,7 @@
     &:hover {
       text-decoration: underline;
     }
-    &.try {
+    &.active {
       color: $fourth_color;
     }
   }
