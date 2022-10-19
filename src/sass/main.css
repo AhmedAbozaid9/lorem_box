@@ -285,10 +285,6 @@ input[type=number] {
   transform: scale(0.98);
 }
 
-html {
-  scroll-behavior: smooth;
-}
-
 * {
   box-sizing: border-box;
 }
